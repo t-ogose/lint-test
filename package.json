@@ -1,6 +1,6 @@
 {
   "name": "@t-ogose/lint",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "files": [
     "eslint.config.mts",
