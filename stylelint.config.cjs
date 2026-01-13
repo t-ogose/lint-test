@@ -2,7 +2,6 @@
 module.exports = {
   extends: [
     'stylelint-config-standard',
-    'stylelint-config-prettier'
   ],
   rules: {
     'indentation': null, /* インデントの整形は Prettier に委譲 */
