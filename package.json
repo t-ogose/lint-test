@@ -1,5 +1,5 @@
 {
-  "name": "@t_test_lint/lint",
+  "name": "@t-ogose/lint",
   "version": "0.1.0",
   "type": "module",
   "files": [
