@@ -1,45 +1,23 @@
 {
-  "name": "lint",
-  "version": "1.0.0",
-  "description": "",
-  "license": "ISC",
-  "author": "",
+  "name": "@t_test_lint/lint",
+  "version": "0.1.0",
   "type": "module",
-  "main": "index.js",
   "files": [
+    "eslint.config.mts",
     "tsconfig.base.json",
     "prettier.config.cjs",
     "stylelint.config.cjs"
   ],
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,mjs,cjs,mts,cts}": [
-      "eslint --fix"
-    ],
-    "*.{css,scss}": [
-      "stylelint --fix"
-    ],
-    "*.{json,md,yml,yaml}": [
-      "prettier --write"
-    ]
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "exports": {
+    ".": "./eslint.config.mts",
+    "./tsconfig": "./tsconfig.base.json",
+    "./prettier": "./prettier.config.cjs",
+    "./stylelint": "./stylelint.config.cjs"
   },
   "peerDependencies": {
-    "stylelint": "^16.0.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.39.2",
-    "eslint": "^9.39.2",
-    "eslint-plugin-react": "^7.37.5",
-    "globals": "^17.0.0",
-    "typescript-eslint": "^8.52.0"
-  },
-  "dependencies": {
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-react-hooks": "^7.0.1",
-    "husky": "^9.1.7",
-    "lint-staged": "^16.2.7",
-    "stylelint-config-standard": "^36.0.0"
+    "eslint": "^9.0.0",
+    "prettier": "^3.0.0",
+    "stylelint": "^16.0.0",
+    "typescript": "^5.0.0"
   }
 }
