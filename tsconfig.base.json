@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "strict": true, /* 型の厳格モード */
+    "noEmit": true, /* tsc は型チェックのみ（jsファイルの出力を行うか） */
+    "esModuleInterop": true, /* CommonJS の default import */
+    "forceConsistentCasingInFileNames": true, /* import の大文字小文字区別 */
+    "skipLibCheck": true, /* node_modules 内の型チェックをスキップ */
+    "noUncheckedIndexedAccess": true, /* 範囲外の配列・オブジェクトへのインデックスアクセスを undefined とのユニオン型に（arr[-1]など） */
+    "exactOptionalPropertyTypes": false /* optional を undefined とのユニオン型に */
+  }
+}
